@@ -11,5 +11,5 @@ function CalcRetangleArea(height,length){
         console.log(area)
         }
         
-(CalcRectangleArea(5, 10)); // 50
-(CalcuCircleArea(3)); // 28.27
+CalcRetangleArea(3,4);
+CalcCircleArea(3); 
