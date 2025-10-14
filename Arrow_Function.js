@@ -1,4 +1,5 @@
-/*function CalcRetangleArea(height,length){
+//Lab 1
+function CalcRetangleArea(height,length){
     let area=0;
     if(height<0||length<0){
         console.log("Invalid Number")
@@ -19,10 +20,10 @@
         }
         };
         
-CalcRetangleArea(-1,4);
-CalcCircleArea(-1);
-*/
-/*function gradeCategory(score){
+CalcRetangleArea(5,4);
+CalcCircleArea(5);
+//Lab 2
+function gradeCategory(score){
 if(score<=100 && score>=90){
  console.log("A")
 }else if(score<=89 && score>=80){
@@ -38,8 +39,8 @@ if(score<=100 && score>=90){
 gradeCategory(95); 
 gradeCategory(72);
 gradeCategory(58)
-*/
-/*
+
+//Lab 3
 function countVowels(word){
     const vowels=("aeiouAEIOU");
     let count=0;
@@ -54,7 +55,37 @@ for(let char of word){
     }
 return count;
 }
-console.log(countVowels(""));
+console.log(countVowels("Hello"));
 console.log(countVowels("Javascript"));
-*/
+//Lab 4
+function doubleNumbers(numbers) {
+    let doubled=[];
+    for (let num of numbers) {
+        doubled.push(num * 2);
+    }
+    return doubled;
+}
+console.log(doubleNumbers([1, 2, 3])); // [2, 4, 6]
+console.log(doubleNumbers([-1, 0, 5])); // [-2, 0, 10]
 
+//Lab 5
+
+function fahrenheitToCelsius(f) {
+    return (f - 32) * 5 / 9;
+}
+
+function describeTemperature(f) {
+    let c = fahrenheitToCelsius(f);
+    if (c < 0) {
+        return "Freezing!";
+    } else if (c <= 20) {
+        return "Cold";
+    } else if (c <= 30) {
+        return "Warm";
+    } else {
+        return "Hot";
+    }
+}
+console.log(describeTemperature(32)); // "Cold"
+console.log(describeTemperature(68)); // "Cold"
+console.log(describeTemperature(95)); // "Hot"
