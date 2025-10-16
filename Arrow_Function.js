@@ -89,3 +89,4 @@ function describeTemperature(f) {
 console.log(describeTemperature(32)); // "Cold"
 console.log(describeTemperature(68)); // "Cold"
 console.log(describeTemperature(95)); // "Hot"
+//Nice
