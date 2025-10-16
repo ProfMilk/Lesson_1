@@ -13,7 +13,7 @@
 const car1 = new Car("Toyota", "Camry", 2021);
 console.log(car1.getDescription());
 
-Lab 2
+//Lab 2
 class BankAccount{
     constructor(owner,balance) {
         this.owner = owner;
@@ -72,7 +72,7 @@ class Book {
   console.log(getShortBooks(library));
   
 //Lab 5
-  class User {
+class User {
     #password;
   
     constructor(username) {
@@ -88,7 +88,7 @@ class Book {
       console.log("Password set successfully.");
     }
   
-    // Method to check password
+ 
     checkPassword(p) {
       if (p === this.#password) {
         return "Access granted";
@@ -98,12 +98,12 @@ class Book {
     }
   }
   
-  // Test cases
+
   const u1 = new User("azahar");
   u1.setPassword("abc123");
-  console.log(u1.checkPassword("abc123")); // "Access granted"
-  console.log(u1.checkPassword("wrong"));  // "Access denied"
+  console.log(u1.checkPassword("abc123")); 
+  console.log(u1.checkPassword("wrong"));  
   
   // Extension test
   const u2 = new User("testUser");
-  u2.setPassword("123"); // "Password must be at least 6 characters long."
+  u2.setPassword("123");
